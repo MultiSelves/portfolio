@@ -96,3 +96,16 @@ window.onload = function() {
     document.getElementById("jarvis-greeting").style.display = "none";
   }, 5000);
 };
+window.onload = function() {
+  const greeting = document.getElementById("greeting-text");
+  greeting.innerText = "Greetings, welcome to Bhuvanesh's portfolio.";
+
+  // Wait for user tap
+  document.body.addEventListener("click", () => {
+    const speech = new SpeechSynthesisUtterance(greeting.innerText);
+    speech.rate = 1.0;
+    speech.pitch = 1.0;
+    speech.lang = "en-US";
+    speechSynthesis.speak(speech);
+  }, { once: true });
+};
