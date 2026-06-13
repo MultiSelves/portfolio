@@ -77,14 +77,13 @@ window.onload = function() {
   const greeting = document.getElementById("greeting-text");
   greeting.innerText = "Greetings, welcome to Bhuvanesh's portfolio.";
 
-  // Text-to-Speech with friendly tone
+  // Text-to-Speech
   const speech = new SpeechSynthesisUtterance(greeting.innerText);
-  speech.rate = 1.0;   // normal speed (not too fast)
-  speech.pitch = 1.0;  // natural pitch
-  speech.volume = 1.0; // clear but not loud
-  speech.lang = "en-US"; // smoother English voice
+  speech.rate = 1.0;   // friendly speed
+  speech.pitch = 1.0;  // natural tone
+  speech.lang = "en-US";
 
-  // Choose a softer voice if available
+  // Pick a softer voice if available
   const voices = speechSynthesis.getVoices();
   const friendlyVoice = voices.find(v => v.name.includes("Google UK English Female") || v.name.includes("Microsoft Zira"));
   if(friendlyVoice) speech.voice = friendlyVoice;
