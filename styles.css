@@ -216,4 +216,23 @@ body{
   box-shadow: 0 0 12px rgba(30,144,255,0.6), 0 0 24px rgba(30,144,255,0.4);
   transition: transform 0.15s ease-out;
 }
+.greeting-box {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0,0,0,0.85);
+  color: #00f0ff;
+  padding: 25px;
+  border: 2px solid #00f0ff;
+  border-radius: 12px;
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+  z-index: 9999;
+}
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
