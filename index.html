@@ -31,7 +31,7 @@
   <li class="stat"><a href="#cgpa">CGPA<br><span>7.1</span></a></li>
   <li class="stat"><a href="#certificates">Certificates<br><span>4+</span></a></li>
   <li class="stat"><a href="#experience">Internship<br><span>0</span></a></li>
-  <li class="stat"><a href="#projects">Projects<br><span>0</span></a></li>
+  <li class="stat"><a href="#projects">Projects<br><span>1</span></a></li>
 </ul>
       </section>
     </div>
@@ -147,10 +147,26 @@
       <h2>PROJECT</h2>
       <div class="project-box" tabindex="0" data-tooltip="On-going">
         <div class="project-title">In - Silico Translation of a Bacterial Gene and Analysis of Mutation - Induced Protein changes</div>
-        <div class="project-status">On-going</div>
+       <a href="#" class="view-btn" id="openModal">View</a>
       </div>
     </section>
-
+    <div id="projectModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>In‑Silico Translation of a Bacterial Gene and Mutation Analysis</h2>
+    <p><strong>Objective:</strong> Translate the lacZ gene of <em>E. coli</em> and analyze mutation‑induced protein changes.</p>
+    <p><strong>Tools Used:</strong> NCBI, ExPASy Translate, ProtParam</p>
+    <p><strong>Results:</strong> Mutation (K→R) caused a minor increase in molecular weight and slight pI decrease, with no change in stability or hydrophobicity.</p>
+    <table>
+      <tr><th>Property</th><th>Original</th><th>Mutated</th></tr>
+      <tr><td>Molecular Weight</td><td>36,740 Da</td><td>36,742 Da</td></tr>
+      <tr><td>Isoelectric Point (pI)</td><td>5.47</td><td>5.43</td></tr>
+      <tr><td>Instability Index</td><td>25.88</td><td>25.88</td></tr>
+      <tr><td>Aliphatic Index</td><td>91.01</td><td>91.01</td></tr>
+      <tr><td>GRAVY</td><td>−0.441</td><td>−0.441</td></tr>
+    </table>
+  </div>
+</div>
     <section id="experience" class="section">
       <h2>EXPERIENCE</h2>
       <div class="experience-box" tabindex="0" data-tooltip="Part-time trainee at a medical laboratory">
@@ -163,7 +179,6 @@
       <button id="emailBtn" class="email-btn" aria-label="Email me">Email me</button>
     </section>
   </main>
-
   <footer class="footer">
     <small>© <span id="year"></span> BHUVANESH M. — Portfolio</small>
   </footer>
@@ -174,3 +189,22 @@
 <div id="jarvis-greeting" class="greeting-box">
   <p id="greeting-text"></p>
 </div>
+<script>
+const modal = document.getElementById("projectModal");
+const btn = document.getElementById("openModal");
+const span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
