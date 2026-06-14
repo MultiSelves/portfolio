@@ -82,3 +82,20 @@ window.onload = function() {
     document.getElementById("jarvis-greeting").style.display = "none";
   }, 5000);
 };
+const modal = document.getElementById("projectModal");
+const btn = document.getElementById("openModal");
+const span = document.getElementsByClassName("close")[0];
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
