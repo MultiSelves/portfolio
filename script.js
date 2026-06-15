@@ -103,3 +103,11 @@ window.addEventListener("load", () => {
   const loadingScreen = document.getElementById("loading-screen");
   loadingScreen.style.display = "none";
 });
+function toggleCertificate() {
+  const box = document.getElementById("certificate-box");
+  if (box.style.display === "block") {
+    box.style.display = "none";
+  } else {
+    box.style.display = "block";
+  }
+}

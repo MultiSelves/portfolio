@@ -172,12 +172,25 @@
        <a href="#" class="view-btn" id="openModal">On going</a>
       </div>
     </section>
-    <section id="experience" class="section">
-      <h2>EXPERIENCE</h2>
-      <div class="experience-box" tabindex="0" data-tooltip="Part-time trainee at a medical laboratory">
-        Medical Lab (part-time trainee) — 1 year
-      </div>
-    </section>
+   <section id="experience">
+ <section id="experience">
+  <h2>Experience</h2>
+  <div class="experience-card" onclick="toggleCertificate()">
+    <p>Lab Technician (part‑time trainee) — 1 year</p>
+
+    <!-- Certificate + Map box (hidden until click) -->
+    <div id="certificate-box" class="certificate-box">
+      <!-- PDF certificate -->
+      <embed src="certificate1.pdf" type="application/pdf" width="400" height="300">
+
+      <!-- Lab location -->
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d243.97756173369163!2d79.8258631!3d11.9300541!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5361601b346557%3A0xcce7121d1a1ca445!2sMICOTECH%20CLINICAL%20LAB%20AND%20ECG!5e0!3m2!1sen!2sin!4v1781496442107!5m2!1sen!2sin" 
+        width="400" height="300" style="border:0;" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
 
     <section id="contact" class="section contact">
       <h2>GET IN TOUCH</h2>

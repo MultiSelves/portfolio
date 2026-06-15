@@ -346,3 +346,33 @@ body{
 .dna span:nth-child(6) { animation-delay: 0.5s; }
 .dna span:nth-child(7) { animation-delay: 0.6s; }
 .dna span:nth-child(8) { animation-delay: 0.7s; }
+
+.experience-card {
+  position: relative;
+  padding: 20px;
+  border: none; /* removes blue outline */
+  border-radius: 10px;
+  background: transparent;
+  transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+/* Hover effect — transparent glow */
+.experience-card:hover {
+  background: rgba(0, 255, 255, 0.05); /* faint transparent cyan glow */
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3); /* soft glow around box */
+}
+
+/* Hidden by default */
+.certificate-box {
+  display: none;
+  margin-top: 15px;
+  background: #0a0a1a;
+  border: 2px solid magenta;
+  border-radius: 8px;
+  padding: 10px;
+}
+.project-card {
+  position: relative;
+  overflow: hidden; /* keeps bacteria inside the box */
+}
+
