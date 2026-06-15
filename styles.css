@@ -376,3 +376,6 @@ body{
   overflow: hidden; /* keeps bacteria inside the box */
 }
 
+.certificate-box {
+  display: none;   /* ensures hidden by default */
+}

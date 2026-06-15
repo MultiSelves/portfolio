@@ -111,3 +111,11 @@ function toggleCertificate() {
     box.style.display = "block";
   }
 }
+function toggleCertificate() {
+  const box = document.getElementById("certificate-box");
+  if (box.style.display === "block") {
+    box.style.display = "none";
+  } else {
+    box.style.display = "block";
+  }
+}
