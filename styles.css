@@ -379,3 +379,37 @@ body{
 .certificate-box {
   display: none;   /* ensures hidden by default */
 }
+.college-link {
+  text-decoration: none;   /* removes underline */
+  color: inherit;          /* keeps same text color */
+  cursor: pointer;         /* shows clickable hand */
+}
+
+.college-link:hover,
+.college-link:focus,
+.college-link:active {
+  color: inherit;          /* no color change on hover or click */
+  text-decoration: none;   /* stays clean */
+}
+.college-link {
+  text-decoration: none;   /* no underline */
+  color: inherit;          /* same text color */
+  position: relative;      /* allows icon positioning */
+  cursor: pointer;
+}
+
+/* Add small icon when hovering */
+.college-link::after {
+  content: "🔗";           /* link symbol */
+  font-size: 12px;         /* small size */
+  position: absolute;
+  right: -18px;            /* adjust spacing */
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;              /* hidden by default */
+  transition: opacity 0.3s ease;
+}
+
+.college-link:hover::after {
+  opacity: 1;              /* show icon on hover */
+}
