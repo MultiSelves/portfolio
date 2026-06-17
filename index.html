@@ -24,7 +24,7 @@
         <p>
          I am <strong>BHUVANESH M.</strong>, a <strong>B.Sc. Microbiology student</strong> at 
 <a href="https://www.igcas.edu.in" target="_blank" class="college-link">
-  <strong>INDRA GANDHI COLLEGE OF ARTS AND SCIENCE</strong>
+  <strong>INDRA GANDHI COLLEGE OF ARTS AND SCIENCE</strong>
 </a>
 with a strong interest in <strong>BIOINFORMATICS</strong> and <strong>ARTIFICIAL INTELLIGENCE</strong>.My goal is to build a career as a bioinformatics scientist, using technology and data-driven approaches to address real-world health challenges. I am passionate about combining my background in microbiology with computational tools to create solutions that improve healthcare and research outcomes.
         </p>
@@ -110,14 +110,21 @@ with a strong interest in <strong>BIOINFORMATICS</strong> and <strong>ARTIFICIAL
           </div>
         </a>
 
-        <div class="cert">
-          <div class="cert-icon">💉</div>
-          <div class="cert-body">
-            <strong>Phlebotomy</strong>
-            <div class="cert-sub">Tagore Paramedical Training College</div>
-            <div class="cert-platform">Workshop: On-site</div>
-          </div>
-        </div>
+        <div class="cert phlebotomy" onclick="togglePhlebotomyCert()">
+  <div class="cert-icon">💉</div>
+  <div class="cert-body">
+    <strong>Phlebotomy</strong>
+    <div class="cert-sub">Tagore Paramedical Training College</div>
+    <div class="cert-platform">Workshop: On-site</div>
+  </div>
+</div>
+
+<!-- Hidden popup -->
+<div class="phlebotomy-popup">
+  <img src="phlebotomy-cert.jpg" alt="Phlebotomy Certificate">
+  <p>I Collected 50+ Blood Samples from Antecubital Fossa</p>
+</div>
+
 
         <div class="cert">
           <div class="cert-icon">🐍</div>
@@ -254,3 +261,6 @@ window.onclick = function(event) {
   </div>
   <p>Loading...</p>
 </div>
+<script src="script.js"></script>
+</body>
+</html>

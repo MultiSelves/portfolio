@@ -413,3 +413,76 @@ body{
 .college-link:hover::after {
   opacity: 1;              /* show icon on hover */
 }
+.phlebotomy-card {
+  position: relative;
+  width: 250px;
+  height: 150px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.phlebotomy-card:hover {
+  transform: scale(1.05);
+}
+
+.hover-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  color: cyan;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.syringe-icon {
+  width: 40px;
+  margin-bottom: 8px;
+}
+
+.certificate-popup {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 255, 255, 0.1);
+  color: cyan;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  z-index: 10;
+}
+
+.certificate-popup img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 6px;
+}
+.phlebotomy-popup {
+  display: none;
+  margin-top: 10px;
+  background: rgba(30,144,255,0.08);
+  border: 1px solid rgba(30,144,255,0.2);
+  border-radius: 10px;
+  padding: 12px;
+  text-align: center;
+  color: var(--accent);
+  animation: fadeIn 0.4s ease;
+}
+
+.phlebotomy-popup img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}

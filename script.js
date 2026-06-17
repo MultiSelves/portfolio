@@ -118,4 +118,13 @@ function toggleCertificate() {
   } else {
     box.style.display = "block";
   }
+ }function toggleCertificate() {
+  const box = document.getElementById("certificate-box");
+  box.style.display = box.style.display === "block" ? "none" : "block";
 }
+
+function togglePhlebotomyCert() {
+  const popup = document.querySelector(".phlebotomy-popup");
+  popup.style.display = popup.style.display === "block" ? "none" : "block";
+}
+
